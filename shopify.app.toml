@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "134b4ad5f498564e456da0331df51fe3"
+name = "Id-Photo App"
+handle = "id-photo-app"
+application_url = "https://photoid.me/"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [ "https://photoid.me/authenticate" ]
+
+[webhooks]
+api_version = "2024-04"
+
+  [webhooks.privacy_compliance]
+  customer_deletion_url = "https://photoid.me/webhook/customers-data-request"
+  customer_data_request_url = "https://photoid.me/webhook/customers-redact"
+  shop_deletion_url = "https://photoid.me/webhook/shop-redact"
+
+[pos]
+embedded = false

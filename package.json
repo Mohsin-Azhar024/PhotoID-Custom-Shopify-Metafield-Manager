@@ -1,0 +1,42 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "shopify": "shopify",
+        "dev": "vite",
+        "build": "vite build",
+        "info": "shopify app info",
+        "generate": "shopify app generate",
+        "deploy": "shopify app deploy",
+        "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@shopify/stylelint-polaris": "latest",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "@vitejs/plugin-react": "latest",
+        "autoprefixer": "latest",
+        "axios": "latest",
+        "init": "latest",
+        "laravel-vite-plugin": "latest",
+        "npx": "latest",
+        "vite": "latest"
+    },
+    "dependencies": {
+        "@originjs/vite-plugin-global-style": "latest",
+        "@shopify/app": "latest",
+        "@shopify/cli": "latest",
+        "@shopify/polaris": "latest",
+        "@vitejs/plugin-react": "latest",
+        "@vitejs/plugin-react-refresh": "latest",
+        "i": "latest",
+        "js-cookie": "latest",
+        "npm": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "react-ga4": "latest",
+        "react-router-dom": "latest",
+        "vite-plugin-compression2": "latest"
+    }
+}
